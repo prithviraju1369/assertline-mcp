@@ -32,7 +32,29 @@ then `/mcp` and authenticate.
 { "servers": { "assertline": { "type": "http", "url": "https://app.assertline.com/api/mcp" } } }
 ```
 
-**Cline and others:** add a remote (streamable HTTP) server with the address above.
+**Cline** — in the Cline panel: MCP Servers → Configure → Remote Servers. Server Name
+`assertline`, Server URL `https://app.assertline.com/api/mcp`, Transport Type
+**Streamable HTTP**, then Add Server and sign in when Cline asks.
+
+Or press **Configure MCP Servers** in the same tab and add the entry to the file it opens
+(`cline_mcp_settings.json`; for current versions `~/.cline/data/settings/cline_mcp_settings.json`):
+```json
+{
+  "mcpServers": {
+    "assertline": {
+      "type": "streamableHttp",
+      "url": "https://app.assertline.com/api/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+`"type": "streamableHttp"` is needed: without it Cline tries the older SSE transport, which
+this server does not offer. Cline does not read MCP servers from VS Code's `settings.json`.
+Agents setting this up: see [llms-install.md](llms-install.md).
+
+**Others:** add a remote (streamable HTTP) server with the address above.
 
 ## Tools
 
