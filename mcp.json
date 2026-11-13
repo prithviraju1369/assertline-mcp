@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "assertline": {
+      "url": "https://app.assertline.com/api/mcp"
+    }
+  }
+}

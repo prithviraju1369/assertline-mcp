@@ -1,0 +1,11 @@
+{
+  "name": "assertline",
+  "version": "1.0.0",
+  "description": "Find your recorded end-to-end web tests, run them and read step-by-step results.",
+  "author": { "name": "Assertline", "email": "support@assertline.com" },
+  "homepage": "https://assertline.com/docs#mcp",
+  "repository": "https://github.com/prithviraju1369/assertline-mcp",
+  "license": "MIT",
+  "keywords": ["testing", "end-to-end", "qa", "mcp"],
+  "logo": "logo.png"
+}

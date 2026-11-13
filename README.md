@@ -9,7 +9,8 @@ step-by-step results.
   Assertline in your browser and allow it. An API key in an `Authorization: Bearer` header
   also works.
 - **Documentation:** https://assertline.com/docs#mcp
-- This repository holds instructions only. The server is hosted; there is nothing to install or run.
+- This repository holds instructions and a Cursor plugin manifest only. The server is hosted; there is nothing to install or run.
+- The files here are under the MIT licence. The Assertline service itself is not open source.
 
 ## Connect
 
