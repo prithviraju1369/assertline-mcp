@@ -64,16 +64,20 @@ Agents setting this up: see [llms-install.md](llms-install.md).
 | `list_projects` | List projects |
 | `list_tests`, `get_test` | The recorded tests of a project; one test with its steps |
 | `run_test` | Start a run of a test |
-| `run_batch` | Start a run of every test with a tag |
-| `list_runs`, `get_run`, `get_run_results` | Runs, a run's status, the result of every step |
-| `list_batches`, `get_batch` | Batches and their runs |
+| `run_batch` | Start a run of every test with a tag, optionally asking for an AI summary of each run (`aiAnalysis`) |
+| `list_runs`, `get_run`, `get_run_results` | Runs, a run's status (for a finished run also its verdict, the steps that did not pass and its AI summary when one was written), the result of every step |
+| `get_run_network` | The network problems of a run: calls that failed or were answered 4xx or 5xx |
+| `list_batches`, `get_batch` | Batches and their runs, with each run's AI headline and cause when a summary was written |
 | `list_environments`, `list_devices` | Where and at what screen size a test can run |
 | `get_plan_and_usage` | The plan, its limits and this month's usage |
 
+Starting a run answers at once with its id and a link; it does not wait for the result.
 An assistant cannot create, change or delete tests, see or invite people, see keys, or pay.
 Remove a connected assistant at any time in Assertline under Settings, Connected apps.
 
 ## You need
 An Assertline account (free at https://app.assertline.com) with at least one recorded test.
-To run a test from an assistant: the desktop app or command line signed in on a computer,
-or a plan with cloud runs.
+To run a test from an assistant: the desktop app or command line signed in on a computer
+(every plan, Free included), or the Pro or Enterprise plan for runs in Assertline's cloud.
+AI summaries use your own OpenAI key, saved in Assertline under Settings. Plans and prices:
+https://assertline.com/pricing

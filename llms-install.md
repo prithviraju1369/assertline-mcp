@@ -46,5 +46,5 @@ to the MCP settings of the client you are running in, and the person signing in 
 
 ## What the person needs
 An Assertline account with at least one recorded test. To run a test from an assistant:
-the Assertline desktop app or command line signed in on a computer, or a plan with cloud
-runs. The tools are listed in [README.md](README.md).
+the Assertline desktop app or command line signed in on a computer (every plan), or the Pro
+or Enterprise plan for runs in Assertline's cloud. The tools are listed in [README.md](README.md).
